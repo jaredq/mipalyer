@@ -2,10 +2,16 @@
 
 module.exports = {
 	db: {
-		uri: 'mongodb://localhost/miplayer-dev',
+		//uri: 'mongodb://localhost/miplayer-dev',
+		//options: {
+		//	user: '',
+		//	pass: ''
+		//}
+
+		uri: 'mongodb://ds041177.mongolab.com:41177/appforce',
 		options: {
-			user: '',
-			pass: ''
+			user: 'appforce2015',
+			pass: 'AppForce2015'
 		}
 	},
 	log: {
