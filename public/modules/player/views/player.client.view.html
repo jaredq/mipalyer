@@ -1,3 +1,30 @@
 <section data-ng-controller="PlayerController">
-	This is the Player view
+	<video id="videojs-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268" 
+  data-setup='{"techOrder": ["silverlight","html5","flash"]}'>
+		<!--
+		<source src="rtsp://stream.wkwz.org/wkwz-fm.sdp" type='audio/mp3'>
+		<source src="/res/broadway.wma" type='audio/x-ms-wma'>
+		<source src="https://distilleryvesper10-14-a.akamaihd.net/0d1709a6d9cd11e2aa0912313817975d_101.mp4" type="video/mp4">
+		<source src="mms://81.27.170.170/heimatmelodie.wma" type='audio/x-ms-wma'>
+		<source src="rtsp://stream.wkwz.org/wkwz-fm.sdp" type='audio/mp3'>
+		<source src="http://6693.live.streamtheworld.com:80/WRQXFMAAC_SC" type='audio/mp3'>
+		<source src="rtmp://streymi.skjarinn.is:80/K100/k100.stream" type='rtmp/mp3'>
+		<source src="rtmp://ondacerofms35livefs.fplive.net/ondacerofms35live-live/stream-madrid" type='rtmp/aac'>
+		<source src="rtmp://cp67126.edgefcs.net/ondemand/&mp4:mediapm/ovp/content/test/video/spacealonehd_sounas_640_300.mp4" type='rtmp/mp4'>
+		-->
+	</video>
+	<br />
+	Url:<input type="text" data-ng-model="mediaUrl" style="width:404px"><br />  
+	Type:
+	<input type="radio" data-ng-model="mediaType" value="audio/aac" id="mt-audio-aac"><label for="mt-audio-aac">audio/aac</label>
+	<input type="radio" data-ng-model="mediaType" value="audio/ogg" id="mt-audio-ogg"><label for="mt-audio-ogg">audio/ogg</label>
+	<input type="radio" data-ng-model="mediaType" value="audio/mpeg" id="mt-audio-mpeg"><label for="mt-audio-mpeg">audio/mpeg</label>
+	<input type="radio" data-ng-model="mediaType" value="audio/mp4" id="mt-audio-mp4"><label for="mt-audio-mp4">audio/mp4</label>
+	<input type="radio" data-ng-model="mediaType" value="audio/wav" id="mt-audio-wav"><label for="mt-audio-wav">audio/wav</label>	
+	<input type="radio" data-ng-model="mediaType" value="audio/flac" id="mt-audio-flac"><label for="mt-audio-flac">audio/flac</label>	
+	<input type="radio" data-ng-model="mediaType" value="audio/x-ms-wma" id="mt-audio-wma"><label for="mt-audio-wma">audio/x-ms-wma</label><br />	
+	<input type="radio" data-ng-model="mediaType" value="rtmp/aac" id="mt-rtmp-aac"><label for="mt-rtmp-aac">rtmp/aac</label>	
+	<input type="radio" data-ng-model="mediaType" value="rtmp/mp3" id="mt-rtmp-mp3"><label for="mt-rtmp-mp3">rtmp/mp3</label><br />		
+	<button class="btn btn-default" data-ng-click="playIt()">Play</button>
+	<button class="btn btn-default" data-ng-click="stopIt()">Stop</button>
 </section>
