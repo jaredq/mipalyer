@@ -1,0 +1,1 @@
+videojs.options.silverlight.xap = "video-js.xap";
