@@ -35,7 +35,9 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.min.js',
 				'public/lib/angular-ui-utils/ui-utils.min.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.min.js',
-				'public/lib/video-js/dist/video.js'
+				'public/lib/video-js/dist/video.js',
+				'public/lib/videojs-silverlight/dist/videojs-silverlight.min.js',
+				'public/lib/videojs-silverlight/dist/videojs-silverlight-loader.js'
 			]
 		},
 		css: 'public/dist/application.min.css',
