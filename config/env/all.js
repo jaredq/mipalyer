@@ -54,9 +54,9 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-				'public/lib/video-js/dist/video.dev.js',
-				'public/lib/videojs-silverlight/dist/videojs-silverlight.js',
-				'public/lib/videojs-silverlight/dist/videojs-silverlight-loader.js'
+				'public/lib/video.js/dist/video-js/video.dev.js',
+				'public/videojs-silverlight/dist/videojs-silverlight.js',
+				'public/videojs-silverlight/dist/videojs-silverlight-loader.js'
 			]
 		},
 		css: [
